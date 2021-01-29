@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: a59beb808a6a32b4d89aab084582e58b
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: sock(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sock
+      parentName: sock(Clone)
+      position: {x: -0, y: 0.13645239, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: sock_armature
+      parentName: sock(Clone)
+      position: {x: -0, y: 0.13645239, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: hips
+      parentName: sock_armature
+      position: {x: -0, y: 0, z: 0.0004273881}
+      rotation: {x: -0.5, y: 0.49999997, z: -0.5, w: 0.50000006}
+      scale: {x: 1, y: 1, z: 1}
+    - name: spine
+      parentName: hips
+      position: {x: -0, y: 0.00042479738, z: 0}
+      rotation: {x: 0.7071068, y: 0.00000003090862, z: 0.70710677, w: -0.00000003090862}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: torso
+      parentName: spine
+      position: {x: -0, y: 0.0005281356, z: 0}
+      rotation: {x: 0, y: -0.000000015893256, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: chest
+      parentName: torso
+      position: {x: -0, y: 0.0005366455, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head
+      parentName: chest
+      position: {x: -0, y: 0.000555926, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head_end
+      parentName: head
+      position: {x: -0, y: 0.0007415604, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: foot_instep
+      parentName: hips
+      position: {x: -0, y: 0.00042479738, z: 0}
+      rotation: {x: -0.06604314, y: 0.00000010430813, z: 0.000000059604645, w: 0.9978168}
+      scale: {x: 1, y: 1, z: 1}
+    - name: foot
+      parentName: foot_instep
+      position: {x: 6.505213e-21, y: 0.00032369906, z: 1.0842021e-20}
+      rotation: {x: 0.10602893, y: 0.00000010646072, z: 0.000000024604937, w: 0.99436307}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: foot_ball
+      parentName: foot
+      position: {x: -6.661338e-18, y: 0.00032853207, z: 9.313223e-12}
+      rotation: {x: -0.5213085, y: -0.4976067, z: -0.37975636, w: 0.5800088}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: toe
+      parentName: foot_ball
+      position: {x: -2.220446e-18, y: 0.0002884242, z: -4.6566206e-12}
+      rotation: {x: -0.1497179, y: -0.00000004347398, z: -0.00000007341923, w: 0.98872876}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: toe_end
+      parentName: toe
+      position: {x: -0, y: 0.00023583892, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: foot_heelstep
+      parentName: hips
+      position: {x: -0, y: 0.00042479738, z: 0}
+      rotation: {x: 0.6868744, y: -0.000000032024317, z: -0.000000076909664, w: 0.7267761}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: foot_heel
+      parentName: foot_heelstep
+      position: {x: -4.1633362e-19, y: 0.0003956158, z: -1.1641528e-12}
+      rotation: {x: -0.22863212, y: 0.000000026601633, z: 0.000000060194644, w: 0.9735129}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: foot_heel_end
+      parentName: foot_heel
+      position: {x: -0, y: 0.00020288784, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mouth_plane
+      parentName: sock(Clone)
+      position: {x: -0, y: 0.13645239, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
