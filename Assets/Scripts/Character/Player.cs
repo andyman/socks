@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
 	private void FixedUpdate()
 	{
 
-		grounded = Physics.CheckSphere(transform.position + Vector3.up * 0.3f, 0.4f, groundLayerMask);
+		grounded = Physics.CheckSphere(transform.position, 0.03f, groundLayerMask);
 		if (grounded)
 		{
 			lastGroundedTime = Time.time;
@@ -81,10 +81,8 @@ public class Player : MonoBehaviour
 		if (jumpHeld && (grounded || Time.time < lastGroundedTime + 0.25f))
 		{
 			v.y = jumpSpeed;
-			//jumpPressed = false;
 			grounded = false;
 			lastGroundedTime = 0.0f;
-
 			if (jumpSound != null && Time.time > nextJumpSoundTime)
 			{
 				ProcAudioSource.Play(jumpSound, transform.position, 0.1f, Random.Range(0.90f, 1.05f), transform);
