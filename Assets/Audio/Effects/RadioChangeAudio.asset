@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb915f2bb5b38a48ae31663230f091b, type: 3}
+  m_Name: RadioChangeAudio
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 2523497fdcdefc644b580bfdd72b0277, type: 3}
+  - {fileID: 8300000, guid: 9cfcb1f50858d15419c902203b1d6675, type: 3}
+  - {fileID: 8300000, guid: f874cd7847996bc40a11afaa1eddeff9, type: 3}
+  - {fileID: 8300000, guid: 91c79ee35d0a01242b1f2b8c6c554bf6, type: 3}

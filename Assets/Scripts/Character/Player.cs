@@ -83,11 +83,7 @@ public class Player : MonoBehaviour
 			v.y = jumpSpeed;
 			grounded = false;
 			lastGroundedTime = 0.0f;
-			if (jumpSound != null && Time.time > nextJumpSoundTime)
-			{
-				ProcAudioSource.Play(jumpSound, transform.position, 0.1f, Random.Range(0.90f, 1.05f), transform);
-				nextJumpSoundTime = Time.time + 0.2f;
-			}
+			PlayJumpSound();
 		}
 
 		if (!grounded)
@@ -115,5 +111,13 @@ public class Player : MonoBehaviour
 		rb.velocity = v;
 	}
 
-
+	public void PlayJumpSound()
+	{
+		if (jumpSound != null && Time.time > nextJumpSoundTime)
+		{
+			ProcAudioSource.instance.PlayOneShot(jumpSound, transform.position, 0.01f, Random.Range(0.80f, 1.2f)).transform.parent = transform;
+			//ProcAudioSource.Play(jumpSound, transform.position, 0.01f, Random.Range(0.80f, 1.2f), transform);
+			nextJumpSoundTime = Time.time + 0.2f;
+		}
+	}
 }

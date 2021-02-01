@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Layers
 {
-	public int DEFAULT = 0;
-	public int GROUND = 9;
-	public int PLAYER = 10;
+	public const int DEFAULT = 0;
+	public const int GROUND = 9;
+	public const int PLAYER = 10;
 
 }

@@ -17,7 +17,7 @@ public class SimpleGroundCheck : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		grounded = Physics.CheckSphere(transform.position + Vector3.up * 0.2f, 0.4f, groundLayerMask);
+		grounded = Physics.CheckSphere(transform.position, 0.03f, groundLayerMask);
 		anim.SetBool("grounded", grounded);
 	}
 }
