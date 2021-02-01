@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Tiitle.unity
+    guid: b8750b23e22464443b9c5de694356495
+  - enabled: 1
     path: Assets/Scenes/LaundryRoomScene.unity
     guid: 45be86d0826461c498a940f32b4e0d9d
   - enabled: 1

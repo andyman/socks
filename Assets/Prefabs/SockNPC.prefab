@@ -162,7 +162,7 @@ MonoBehaviour:
   nextLineIndex: 0
   loopable: 1
   textBacker: {fileID: 2160856802478587450}
-  pitchMultiplier: 1
+  pitchMultiplier: 2
   volumeMultiplier: 0.5
   audioSource: {fileID: 2160856802281782528}
   speechSet: {fileID: 11400000, guid: a272722b724eac34381a53773ffc2cf1, type: 2}

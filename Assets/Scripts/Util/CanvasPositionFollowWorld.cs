@@ -14,6 +14,12 @@ public class CanvasPositionFollowWorld : MonoBehaviour
 		cam = Camera.main;
 		myCanvas = GetComponentInParent<Canvas>();
 		myRectTransform = GetComponent<RectTransform>();
+		Vector3 worldPos = target.position;
+		Vector3 screenPoint = cam.WorldToScreenPoint(worldPos);
+		float scaleFactor = myCanvas.scaleFactor;
+		Vector2 finalPosition = new Vector2(screenPoint.x / scaleFactor, screenPoint.y / scaleFactor);
+		myRectTransform.anchoredPosition = finalPosition;
+
 	}
 
 	// Update is called once per frame
@@ -23,7 +29,7 @@ public class CanvasPositionFollowWorld : MonoBehaviour
 		Vector3 screenPoint = cam.WorldToScreenPoint(worldPos);
 		float scaleFactor = myCanvas.scaleFactor;
 		Vector2 finalPosition = new Vector2(screenPoint.x / scaleFactor, screenPoint.y / scaleFactor);
-		myRectTransform.anchoredPosition = finalPosition;
+		myRectTransform.anchoredPosition = Vector2.Lerp(myRectTransform.anchoredPosition, finalPosition, Time.deltaTime * 10.0f);
 	}
 	void LateUpdate()
 	{

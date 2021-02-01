@@ -126,7 +126,7 @@ public class OneLiner : MonoBehaviour
 
 		if (speechSet != null)
 		{
-			speechSet.PlayRandom(transform.position, volumeMultiplier, volumeMultiplier, 0.9f * pitchMultiplier, 1.1f * pitchMultiplier).transform.parent = transform;
+			speechSet.PlayRandom(transform.position, volumeMultiplier, volumeMultiplier, pitchMultiplier, pitchMultiplier).transform.parent = transform;
 		}
 
 		textPlay = StartCoroutine(TextPlayCoroutine(line));

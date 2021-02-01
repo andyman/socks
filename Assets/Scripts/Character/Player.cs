@@ -115,7 +115,7 @@ public class Player : MonoBehaviour
 	{
 		if (jumpSound != null && Time.time > nextJumpSoundTime)
 		{
-			ProcAudioSource.instance.PlayOneShot(jumpSound, transform.position, 0.01f, Random.Range(0.80f, 1.2f)).transform.parent = transform;
+			ProcAudioSource.instance.PlayOneShot(jumpSound, transform.position, 0.05f, Random.Range(0.80f, 1.2f)).transform.parent = transform;
 			//ProcAudioSource.Play(jumpSound, transform.position, 0.01f, Random.Range(0.80f, 1.2f), transform);
 			nextJumpSoundTime = Time.time + 0.2f;
 		}
